@@ -7,13 +7,19 @@ g++ -std=c++11 task1.cpp -o task1
 ./task1
 ```
 
-Replace `task1` with the number of the task you want to run.
-Files are read and written in the program's current working directory.
+Replace `task1` with the task number. Files are read from and written to the program’s current working directory.
 
-- `task1.cpp`: accepts a student's full name, ID and grade, then saves them in `Student.txt`.
-- `task2.cpp`: reads an existing `fruit.txt` and appends `Fresh Fruits`. Create the fruit list before running, for example Apple, Orange and Banana on separate lines. Each run appends the message once.
-- `task3.cpp`: creates `welcome.txt`, replaces `body` with `one`, then saves `Hello Everyone` in the same file.
-- `task4.cpp`: saves names and ages in `persons.txt`, reads them into a vector, and writes the youngest and oldest people to `results.txt`. Includes all people tied for either age.
-- `task5.cpp`: appends student records to `students.txt`, ending each record with `$`. Uses a 20-character name array, so names may contain up to 19 characters plus the string terminator. Enter `y` to add another record or `n` to stop.
-- `task6.cpp`: creates `grades.txt` with five integer grades, prints them, asks for a grade to delete, copies the other grades to a temporary file, then replaces the original file and prints a success or error message. `grades_before.txt` and `grades_after.txt` show the file before and after deleting 70.
-- `task7.cpp`: stores four student names in a vector, sorts them in ascending (A to Z) order with `sort()`, and prints them before and after sorting.
+- `task1.cpp`: reads a student’s name, ID, and grade, then saves them in `Student.txt`.
+- `task2.cpp`: reads `fruit.txt` and appends `Fresh Fruits`. Create the fruit list first, with one fruit per line.
+- `task3.cpp`: creates `welcome.txt`, changes `body` to `one`, then saves `Hello Everyone`.
+- `task4.cpp`: saves names and ages in `persons.txt`, then writes the youngest and oldest people to `results.txt`, including ties.
+- `task5.cpp`: appends student records to `students.txt`, ending each record with `$`. Names can be up to 19 characters. Enter `y` to add another record or `n` to stop.
+- `task6.cpp`: writes five grades to `grades.txt`, prints them, asks which grade to delete, and replaces the file with the remaining grades. `grades_before.txt` and `grades_after.txt` show the example before and after deleting 70.
+
+### Task 6 output
+
+The screenshot below shows a successful run that deletes grade 70.
+
+![Task 6 program output](2-task6-output-41d84217.png)
+
+- `task7.cpp`: stores four student names in a vector and prints them before and after sorting alphabetically with `sort()`.
