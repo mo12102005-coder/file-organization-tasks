@@ -1,6 +1,6 @@
 # File Organization Tasks
 
-Six separate C++ programs. Compile and run each program on its own.
+Seven separate C++ programs. Compile and run each program on its own.
 
 ```sh
 g++ -std=c++11 task1.cpp -o task1
@@ -15,4 +15,5 @@ Files are read and written in the program's current working directory.
 - `task3.cpp`: creates `welcome.txt`, replaces `body` with `one`, then saves `Hello Everyone` in the same file.
 - `task4.cpp`: saves names and ages in `persons.txt`, reads them into a vector, and writes the youngest and oldest people to `results.txt`. Includes all people tied for either age.
 - `task5.cpp`: appends student records to `students.txt`, ending each record with `$`. Uses a 20-character name array, so names may contain up to 19 characters plus the string terminator. Enter `y` to add another record or `n` to stop.
+- `task6.cpp`: creates `grades.txt` with five integer grades, prints them, asks for a grade to delete, copies the other grades to a temporary file, then replaces the original file and prints a success or error message. `grades_before.txt` and `grades_after.txt` show the file before and after deleting 70.
 - `task7.cpp`: stores four student names in a vector, sorts them in ascending (A to Z) order with `sort()`, and prints them before and after sorting.
